@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true"
+    tools:context=".AddEditTrainerActivity"> <!-- Make sure your package name is correct here -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_dark"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back_button"
+                android:padding="4dp"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/orange_primary" />
+
+            <TextView
+                android:id="@+id/activityTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="@string/add_trainer"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Form Content -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Trainer Image URL -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/trainer_image_url"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/trainer_image_url_hint"
+                    app:boxBackgroundColor="@color/surface_dark"
+                    app:hintTextColor="@color/text_secondary"
+                    app:startIconDrawable="@drawable/ic_image_url"
+                    app:startIconTint="@color/orange_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/imageUrlEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textUri"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Trainer Name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/trainer_name_hint"
+                    app:boxBackgroundColor="@color/surface_dark"
+                    app:hintTextColor="@color/text_secondary"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/orange_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Trainer Email -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/trainer_email_hint"
+                    app:boxBackgroundColor="@color/surface_dark"
+                    app:hintTextColor="@color/text_secondary"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/orange_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Trainer Specialization -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/trainer_specialization_hint"
+                    app:boxBackgroundColor="@color/surface_dark"
+                    app:hintTextColor="@color/text_secondary"
+                    app:startIconDrawable="@drawable/ic_star"
+                    app:startIconTint="@color/orange_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/specializationEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Trainer Experience -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/trainer_experience_hint_detail"
+                    app:boxBackgroundColor="@color/surface_dark"
+                    app:hintTextColor="@color/text_secondary"
+                    app:startIconDrawable="@drawable/ic_experience"
+                    app:startIconTint="@color/orange_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/experienceEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Trainer Fee -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/trainer_fee_hint"
+                    app:boxBackgroundColor="@color/surface_dark"
+                    app:hintTextColor="@color/text_secondary"
+                    app:startIconDrawable="@drawable/ic_fee"
+                    app:startIconTint="@color/orange_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/feeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Next Available Time -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/next_available_datetime_hint"
+                    app:boxBackgroundColor="@color/surface_dark"
+                    app:hintTextColor="@color/text_secondary"
+                    app:startIconDrawable="@drawable/ic_calendar_time"
+                    app:startIconTint="@color/orange_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nextAvailableEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Working Hours Row -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/working_hours_label"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/start_hour_hint"
+                        app:boxBackgroundColor="@color/surface_dark"
+                        app:hintTextColor="@color/text_secondary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/startHoursEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/text_secondary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/end_hour_hint"
+                        app:boxBackgroundColor="@color/surface_dark"
+                        app:hintTextColor="@color/text_secondary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/endHoursEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/text_secondary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <!-- Status Switch -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/trainer_active_status"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/statusSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:contentDescription="@string/status_switch"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        app:thumbTint="@color/orange_primary"
+                        app:trackTint="@color/orange_light" />
+                </LinearLayout>
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/save_trainer"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Progress Bar (for saving) -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    </ScrollView>

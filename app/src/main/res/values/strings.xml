@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitXpress Admin</string>
+
+    <!-- Product Management -->
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_price">Price (Rs.)</string>
+    <string name="product_stock">Stock</string>
+    <string name="product_category">Category</string>
+    <string name="save_product">Save Product</string>
+    <string name="select_image">Select Image</string>
+    <string name="add_category">Add Category</string>
+
+    <string name="category_image_resource_name_hint">Image Resource Name (e.g., energy_bar)</string>
+
+    <string name="product_price_format">Rs. %.2f</string>
+    <string name="stock_status_low">Low Stock</string>
+    <string name="stock_status_in">In Stock</string>
+    <string name="stock_status_out">Out of Stock</string>
+
+
+
+
+
+    <!-- Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="back">Back</string>
+
+    <!-- Categories Screen -->
+    <string name="categories_management">Categories Management</string>
+    <string name="search_categories_hint">Search categories...</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="back_button">Back Button</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="mark_all_read">Mark All Read</string>
+    <string name="all">All</string>
+    <string name="unread">Unread</string>
+    <string name="orders">Orders</string>
+    <string name="users">Users</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="all_caught_up">You are all caught up!</string>
+    <string name="notifications_icon">Notifications Icon</string>
+    <string name="send_notification">Send Notification</string>
+
+    <string name="orders_management">Orders Management</string>
+    <string name="search_orders_hint">Search orders...</string>
+    <string name="order_tabs">Order status tabs</string>
+
+
+    <string name="status_switch">Toggle status</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_description">Category description</string>
+    <string name="category_image">Category image</string>
+
+
+
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="manage_platform">Manage your FitXpress platform</string>
+    <string name="overview">Overview</string>
+    <string name="management">Management</string>
+    <string name="total_orders">Total Orders</string>
+    <string name="total_users">Total Users</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="pending_orders">Pending Orders</string>
+
+    <string name="no_categories_found">No Categories Found</string>
+    <string name="add_new_category_prompt">Tap the + button to add a new category.</string>
+
+    <string name="category_image_upload_hint">Category Image Upload</string>
+    <string name="add_image_icon">Add Image Icon</string>
+    <string name="category_name_hint">Category Name</string>
+    <string name="category_description_hint">Category Description</string>
+    <string name="category_status">Category Status</string>
+    <string name="save_category">Save Category</string>
+    <string name="edit_category">Edit Category</string>
+
+
+    <string name="products_management">Products Management</string>
+    <string name="search_products_hint">Search products...</string>
+
+    <!-- New Strings for Trainers -->
+    <string name="trainers_management">Trainers Management</string>
+    <string name="search_trainers_hint">Search trainers...</string>
+    <string name="add_trainer">Add Trainer</string>
+    <string name="no_trainers_found">No Trainers Found</string>
+    <string name="add_new_trainer_prompt">Tap the + button to add a new trainer.</string>
+    <string name="trainer_image">Trainer Image</string>
+    <string name="trainer_image_upload_hint">Trainer Image Upload</string>
+    <string name="trainer_name_hint">Trainer Name</string>
+    <string name="trainer_email_hint">Email Address</string>
+    <string name="trainer_specialization_hint">Specialization</string>
+    <string name="trainer_experience_hint">Experience (Years)</string>
+    <string name="trainer_rating_hint">Rating (0-5)</string>
+    <string name="trainer_clients_hint">Clients Count</string>
+    <string name="trainer_join_date_hint">Join Date</string>
+    <string name="trainer_status">Trainer Status</string>
+    <string name="trainer_verification">Trainer Verification</string>
+    <string name="save_trainer">Save Trainer</string>
+    <string name="edit_trainer">Edit Trainer</string>
+    <string name="experience">Experience</string>
+    <string name="rating">Rating</string>
+    <string name="clients">Clients</string>
+    <string name="joined">Joined</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="verified">Verified</string>
+    <string name="unverified">Unverified</string>
+    <string name="verification_switch">Toggle Trainer Verification</string>
+
+    <!-- New Strings for Add/Edit Trainer Form (Based on Firebase data model) -->
+    <string name="trainer_image_url">Trainer Image URL</string>
+    <string name="trainer_image_url_hint">Enter image URL (e.g., https://example.com/image.jpg)</string>
+    <string name="trainer_fee_hint">Fee (e.g., 2000 LKR or 25 USD)</string>
+    <string name="next_available_datetime_hint">Next Available (Tap to select Date &amp; Time)</string>
+    <string name="working_hours_label">Working Hours (24-hour format)</string>
+    <string name="start_hour_hint">Start Hour (e.g., 9 for 9 AM)</string>
+    <string name="end_hour_hint">End Hour (e.g., 17 for 5 PM)</string>
+    <string name="trainer_active_status">Active Status</string>
+    <string name="trainer_experience_hint_detail">Experience (e.g., 5 years, 3 months)</string>
+
+    <string name="fee">Fee</string>
+
+    <string name="fee_not_set">Fee N/A</string>
+    <string name="experience_not_set">Experience N/A</string> <!-- Should already be there -->
+
+
+
+    <string name="users_management">Users Management</string>
+    <string name="search_users">Search users...</string>
+    <string name="orders_count">Orders</string>
+    <string name="total_spent">Total Spent</string>
+    <string name="last_login">Last login</string>
+    <string name="view_orders">View Orders</string>
+
+
+</resources>

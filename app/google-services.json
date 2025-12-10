@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "173901286756",
+    "firebase_url": "https://fitxpressproject-default-rtdb.firebaseio.com",
+    "project_id": "fitxpressproject",
+    "storage_bucket": "fitxpressproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173901286756:android:d5b013b80ef4c5d111fe71",
+        "android_client_info": {
+          "package_name": "com.example.admin.fitxpress"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGwVrRndJVvpbpgMKfQyKRR2aL97Y-JhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173901286756:android:f67f8e5eaacee86e11fe71",
+        "android_client_info": {
+          "package_name": "com.example.fitxpress"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGwVrRndJVvpbpgMKfQyKRR2aL97Y-JhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

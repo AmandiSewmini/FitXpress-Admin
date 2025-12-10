@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Notification Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/notificationIconImageView"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/notification_icon_background"
+                android:padding="6dp"
+                android:src="@drawable/ic_notifications"
+                app:tint="@color/white" />
+
+
+            <!-- Unread Indicator -->
+            <View
+                android:id="@+id/unreadIndicator"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/orange_primary"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <!-- Notification Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Header Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notificationTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="New Order Received"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/notificationTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 min ago"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <!-- Message -->
+            <TextView
+                android:id="@+id/notificationMessageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Order #12345 has been placed by John Doe for Protein Powder"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+            <!-- Category and Action Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Category Badge -->
+                <TextView
+                    android:id="@+id/notificationCategoryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_badge_background"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="2dp"
+                    android:text="ORDER"
+                    android:textColor="@color/orange_primary"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:id="@+id/actionButtonsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/viewButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/small_button_background"
+                        android:paddingHorizontal="8dp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="8sp" />
+
+                    <Button
+                        android:id="@+id/dismissButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:background="@drawable/small_button_outline"
+                        android:paddingHorizontal="8dp"
+                        android:text="Dismiss"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
